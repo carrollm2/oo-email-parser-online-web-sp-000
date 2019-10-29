@@ -24,7 +24,7 @@ class EmailAddressParser
         parsed_emails.push(email)
       end
     end
-
+    puts parsed_emails
     parsed_emails = email_address_array.uniq
   end
 end
