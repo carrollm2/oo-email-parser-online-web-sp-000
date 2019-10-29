@@ -23,7 +23,7 @@ class EmailAddressParser
     #     parsed_emails.push(email)
     #   end
     # end
-    
+
     #parsed_emails.uniq
   end
 end
