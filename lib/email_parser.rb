@@ -12,17 +12,8 @@ class EmailAddressParser
   end
 
   def parse
-    email_address_array = email_addresses.gsub(" ", //).split(", ")
+    #email_address_array = email_addresses.gsub(" ", " ").split(", ")
+    email_address_array = email_addresses.delete!(" ").split(", ")
     parsed_emails = email_address_array.uniq
-
-  #   parsed_emails = []
-  #   email_address_array.each do |email|
-  #     if email != " "
-  #       parsed_emails.push(email)
-  #     end
-  #   end
-  #   parsed_emails = email_address_array.uniq
-  # end
-
   end
 end
