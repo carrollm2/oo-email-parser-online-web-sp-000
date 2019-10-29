@@ -20,7 +20,7 @@ class EmailAddressParser
       if email != " "
         parsed_emails.push(email)
       end
-    end  
+    end
     parsed_emails = email_address_array.uniq
   end
 
