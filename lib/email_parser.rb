@@ -27,3 +27,6 @@ class EmailAddressParser
     parsed_emails = email_address_array.uniq
   end
 end
+
+a = EmailAddressParser.new("avi@test.com arel@test.com")
+a.parse
