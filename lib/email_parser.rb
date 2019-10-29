@@ -25,7 +25,7 @@ class EmailAddressParser
       end
     end
     puts parsed_emails
-    parsed_emails = email_address_array.uniq
+    parsed_emails = parsed_emails.uniq
   end
 end
 
