@@ -24,4 +24,4 @@ class EmailAddressParser
   #   parsed_emails = email_address_array.uniq
   # end
 
-end
+  end
