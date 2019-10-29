@@ -11,7 +11,7 @@ class EmailAddressParser
     @email_addresses = email_addresses
   end
 
-  def self.parse(email_addresses)
+  def parse(email_addresses)
     email_address_array = email_addresses.split(",").split(" ")
     unique_email_addresses = email_address_array.uniq
   end
