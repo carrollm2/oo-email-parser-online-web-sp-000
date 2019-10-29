@@ -20,6 +20,7 @@ class EmailAddressParser
     email_address_array.each do |email|
       if email != '""'
         parsed_emails.push(email)
+      end
     end
 
     parsed_emails = email_address_array.uniq
