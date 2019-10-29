@@ -18,6 +18,7 @@ class EmailAddressParser
 
     parsed_emails = []
     email_address_array.each do |email|
+      puts email, "".empty?, email.empty?
       if email.empty? == false
         parsed_emails.push(email)
       end
