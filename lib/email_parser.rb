@@ -12,7 +12,7 @@ class EmailAddressParser
   end
 
   def parse
-    email_address_array = email_addresses.gsub(" ", ",").split(",")
+    email_address_array = email_addresses.split(",")
     #email_address_array = email_addresses.delete!(" ").split(",")
     parsed_emails = email_address_array.uniq
   end
