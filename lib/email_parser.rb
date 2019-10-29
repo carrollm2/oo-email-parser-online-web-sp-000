@@ -14,17 +14,14 @@ class EmailAddressParser
   def parse
     whitespace_removed = email_addresses.gsub(" ",",")
     email_address_array = whitespace_removed.split(",")
-    #email_address_array = email_addresses.delete!(" ").split(",")
 
-    email_address_array.uniq
-    # parsed_emails = []
-    # email_address_array.each do |email|
-    #   if email.empty? == false
-    #     parsed_emails.push(email)
-    #   end
-    # end
-
-    #parsed_emails.uniq
+    parsed_emails = []
+    email_address_array.each do |email|
+      if email.empty? == false
+        parsed_emails.push(email)
+      end
+    end
+    parsed_emails.uniq
   end
 end
 
