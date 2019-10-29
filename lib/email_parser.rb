@@ -16,16 +16,15 @@ class EmailAddressParser
     email_address_array = whitespace_removed.split(",")
     #email_address_array = email_addresses.delete!(" ").split(",")
 
-    parsed_emails = []
-    email_address_array.each do |email|
-      #puts email, "".empty?, email.empty?
-      puts email
-      if email.empty? == false
-        parsed_emails.push(email)
-      end
-    end
-    puts parsed_emails
-    parsed_emails.uniq
+    email_address_array.unique
+    # parsed_emails = []
+    # email_address_array.each do |email|
+    #   if email.empty? == false
+    #     parsed_emails.push(email)
+    #   end
+    # end
+    
+    #parsed_emails.uniq
   end
 end
 
